@@ -229,7 +229,7 @@ print('')
 #获取天气
 headers={'Accept-Language': 'zh-CN'}
 weather=req.get(r'http://wttr.in/'+city+r'?format=4&?m',headers=headers).text
-
+print("warcher: " + weather)
 #实际运行
 for a in range(1, int(app_num)+1):
     print('账号 '+str(a))
